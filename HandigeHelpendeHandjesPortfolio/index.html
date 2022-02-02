@@ -1,0 +1,178 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handige Helpende Handjes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase.js"></script>
+</head>
+<body id="bodyAbout">
+    <div class="container"></div>
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">De vakman</a>
+                    <a href="donate.html">Doneren</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            
+                <input type="checkbox" id="toggle"/>
+                <label class="toggle-container" for="toggle">
+                    <span class="button button-toggle"></span>        
+                </label>
+                <nav class="nav">
+                    <a class="nav-item" href="index.html">Home</a>
+                    <a class="nav-item" href="about.html">De vakman</a>
+                    <a class="nav-item" href="donate.html">Doneren</a>
+                    <a class="nav-item" href="contact.html">Contact</a>
+                </nav>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div class="logoText">
+                    <div class="estrellas inverso">
+                        <span>S</span>
+                        <span>E</span>
+                        <span>J</span>
+                        <span>D</span>
+                        <span>N</span>
+                        <span>A</span>
+                        <span>H</span>
+                        <span> </span>
+                        <span>E</span>
+                        <span>D</span>
+                        <span>N</span>
+                        <span>E</span>
+                        <span>P</span>
+                        <span>L</span>
+                        <span>E</span>
+                        <span>H</span>
+                        <span> </span>
+                        <span>E</span>
+                        <span>G</span>
+                        <span>I</span>
+                        <span>D</span>
+                        <span>N</span>
+                        <span>A</span>
+                        <span>H</span>
+                      </div>    
+
+                      <div class="estrellas">
+                        <span> </span>
+                        <span>★</span>
+                        <span> </span>
+                        <span id="uppercase">A</span>
+                        <span id="lowercase">l</span>
+                        <span id="lowercase">l</span>
+                        <span id="lowercase">r</span>
+                        <span id="lowercase">o</span>
+                        <span id="lowercase">u</span>
+                        <span id="lowercase">n</span>
+                        <span id="lowercase">d</span>
+                        <span > </span>
+                        <span id="lowercase">k</span>
+                        <span id="lowercase">l</span>
+                        <span id="lowercase">u</span>
+                        <span id="lowercase">s</span>
+                        <span id="lowercase">j</span>
+                        <span id="lowercase">e</span>
+                        <span id="lowercase">s</span>
+                        <span id="lowercase">m</span>
+                        <span id="lowercase">a</span>
+                        <span id="lowercase">n</span>
+                        <span> </span>
+                        <span>★</span>
+                        <span> </span>                      
+                      </div>
+                    </div>
+                    <img src="Images/logoHHH.png" id="HHHLogo"> 
+                    <img src="Images/logoMob.png" id="HHHLogoMobile"> 
+                </div>
+            </div>
+        </div>
+        
+        <!-- <div class="content-wrapper"> -->
+            <div class="portfolio-items-wrapper">
+    
+                <div id="swup" class="transition-mainContent">
+    
+                    <div class="item-wrapper">
+                        <div class="portfolio-img-background" id="img1" style="background-image:url(Images/homeImages/plank.jpg)"></div>
+                            <div class="img-text-wrapper" id="item-text-wrapper1">
+                                <div class="titleWork" id="titleWork1">Plank</div>
+                                <div class="subtitle" id="subtitle1">
+                                   Op maat gezaagde en opgehangen plank ter decoratie.
+                                </div>
+                            </div>
+                    </div>
+                
+                    <div class="item-wrapper" id="itemWrapper1">
+                        <div class="portfolio-img-background" style="background-image:url(Images/homeImages/tvkastje.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="titleWork">Televisie kastje</div>
+                            <div class="subtitle" id="subtitle2">
+                                Om maat gemaakt kastje voor audio en televisiescherm.
+                            </div>
+                        </div>
+                    </div>
+                   
+                   
+                    <div class="item-wrapper">
+                        <div class="portfolio-img-background" id="img3" style="background-image:url(Images/homeImages/spotjes.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="titleWork">Inbouw spotjes</div>
+                            <div class="subtitle" id="subtitle3">
+                                <p>Inbouwspotjes gemonteerd in een houten plafonddeel.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item-wrapper">
+                        <div class="portfolio-img-background" id="img4" style="background-image:url(Images/homeImages/houtenbankenjpeg.jpeg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="titleWork">Houten lounchebanken</div>
+                            <div class="subtitle" id="subtitle4">
+                                Lounchebanken op maat gemaakt van pallets.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="portfolio-img-background" id="img5" style="background-image:url(Images/homeImages/terrasdak.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="titleWork">Terrasoverkapping</div>
+                            <div class="subtitle" id="subtitle5">
+                                Terrasoverkapping  van tien bij tweeënhalve meter met aluminium platen.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-wrapper">
+                        <div class="portfolio-img-background" id="img6" style="background-image:url(Images/homeImages/spotjes2.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="titleWork">Plafondspotjes</div>
+                            <div class="subtitle" id="subtitle6">
+                                Vier plafondspotjes vanout één contactpunt.
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <footer id="footerAboutpage">
+                    <div class="rights" id="rightsHome"> 
+                        <span id="heart">&copy;</span> 
+                           <span id="rightsSpan">by <a id="liaraskaraLink" href="">Liara Skara</a></span>, 2022</div>
+                </footer>
+        </div>
+    </div>
+    <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>   -->
+<script src="myscript.js"></script>
+</body>
+</html>
